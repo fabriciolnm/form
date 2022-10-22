@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="page">
+  <header>
+    <h1>rate your mentorship</h1>
+    <p>It's time to evaluate your mentor. Let's go?</p><br>
+    <img src="images/img1.svg" alt="logo">
+  </header>
+
+  <title>Personal information</title>
+  
+  <form>
+    <fieldset>
+        <div class="fullname">
+          <div class="input-wrapper">
+           <label for="name">Name</label>
+            <input type="text" id="name"/>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="surname">Last name</label>
+            <input type="text" id="surname"/>
+          </div>
+        </div>
+          
+        <div class="input-wrapper">
+          <label for="email">Email <span>(Enter a valid email address)</span> </label>
+          <input type="email" id="email"/>
+        </div>
+            
+        
+    </fieldset>
+
+    <fieldset>
+      <legend>Mentor Information</legend>
+        <div class="mentor-name">
+      <div class="input-wrapper">
+        <label for="mentor">Select who was your mentor </label>
+        <input type="text" id="mentor"/>
+      </div>
+      <div class="input-wrapper">
+        <label for="feedback">Feedback about the mentor </label>
+        <input type="text" id="feedback"/>
+      </div>
+   
+      <div class="custom-checkbox">
+        <input type="checkbox" id="checkbox"/>
+        <label for="checkbox">All my doubts were clarified during the mentoring. </label>
+      </div>
+
+    </fieldset>
+
+
+    <fieldset>
+      <legend>Scheduling next mentorship</legend>
+      <div class="col-3">
+        <div class="input-wrapper">
+          <label for="date">Date <span>(MM/DD/YYYY)</span></label>
+          <input type="text" id="data"/>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="data-begin" id="data-begin">from</label>
+          <input type="text" id="data-begin"/>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="data-end">until</label>
+          <input type="text" id="data-end"/>
+        </div>
+      </div>
+    </fieldset>
+
+        <input class="button" type="submit" value="Save">
+
+  </form>
+
+
+</body>
+</html>
